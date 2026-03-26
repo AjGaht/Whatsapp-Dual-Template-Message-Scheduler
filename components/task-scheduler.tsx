@@ -216,6 +216,7 @@ function CreateTaskForm({ onCreated, onCancel }: CreateFormProps) {
           <TemplateManager selectedTemplate={template} onSelectTemplate={setTemplate} />
           {template && (
             <Button className="w-full" size="sm" onClick={() => setStep("settings")}>
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
               Continue with "{template.name}" →
             </Button>
           )}
